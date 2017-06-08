@@ -18,7 +18,8 @@ Stack | array, linked list
 Queue | array, linked list
 Priority Queue | heap
 Dictionary & hashmap | array
-===
+--- | ---
+
 #Complexity Theory Basics
 - Space Complexity: how much memory an algorithm needs
 - Time Complexity: how much time an algorithm needs ( as fast as possible)
