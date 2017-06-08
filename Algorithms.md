@@ -1,8 +1,8 @@
 
-#Abstract Data Types & Data Structures
+# Abstract Data Types & Data Structures
 ## Abstract Data Types
 =======
-##Abstract Data Types & Data Structures
+## Abstract Data Types & Data Structures
 
 ### Abstract Data Types
 	+ Interfaces in Java
@@ -10,7 +10,7 @@
 	+ Without a concrete implementation
 	+ Just tells the behaviour
 
-##Data Structure
+## Data Structure
 	- Concrete implementation of ADTs
 	- Best case scenario:
 			O(1) time complexity to insert
@@ -25,21 +25,21 @@ Priority Queue | heap
 Dictionary & hashmap | array
 --- | ---
 
-#Complexity Theory Basics
+# Complexity Theory Basics
 - Space Complexity: how much memory an algorithm needs
 - Time Complexity: how much time an algorithm needs ( as fast as possible)
 
-##Time Complexity: 
+## Time Complexity: 
 	- Do not consider absolute time?
 	- Consider number of steps 
 	- Question you ask is how the algorithm running time depends on INPUT SIZE
 	- How algorithm will scale and behave with the input size
 	- We like deterministic algorithms where the running times are approximitaly linear
 
-##Asymptotic analysis
+## Asymptotic analysis
  	- How algorithm is going to behave when we have to sort large input size
 
-###Big O notation: Defines upper bound
+### Big O notation: Defines upper bound
 	- It describes the limiting behavior of a function, when argument tends towards a particular value or infinity
 	- function of running time
 	- it is used to classify algorithms by how they respond to changes in input size
@@ -50,19 +50,19 @@ Dictionary & hashmap | array
 		if we have an O(N^2) running time complexity, it is also true it is in O(N^3) or O(N^4) or O(N^5)
 ```
 
-###Big Omega Notation: Defines lower bound
+### Big Omega Notation: Defines lower bound
 	- describes the limiting behavour of a function when argument tends towards a particular valur or infinity
 	- Number Theory: it means that f(n) function is not dominated by g(n) function asymptotically
 	- Complexity Theory: it means that an f(n) function is bounded below by an g(n) function asymptotically fn = Omega(g(n))
 	- if we have an Omega(N^2) running time complexity, it is also true it is in Omega(N), Omega(logN) or Omega(1)
 
-###Big Theta Notation:
+### Big Theta Notation:
 	- when f(n) = O(g(n)) f(n) = Omega(g(n))
 	- have upper and lower bownd
 
 
 
-##Algorithms running time:
+## Algorithms running time:
 	1) Constant Time Complexity: O(1)
 	2) Logarithmic Complexity: O(logN)
 	3) Linear Time Complexity: O(N)
@@ -71,87 +71,87 @@ Dictionary & hashmap | array
 	6) Exponential Complexity: O(c^n) C is constant
 	7) Factorial Complexity: O(n!)
 
-###Constant Time complexity: O(1)
+### Constant Time complexity: O(1)
 	- Swapping two numbers or deciding whether a number is odd or even
 	- Fastest algorithm
 	- Random Access of array
 
-###Logarithmic Time Complexity: O(logN): 
+### Logarithmic Time Complexity: O(logN): 
 	- Finding an arbitary item in sorted array 
 			-- (1, 2, 3, 4, 5 6, 7, 8, 9, 10) ==> 1,2,3,4,5 ==> 1, 2, 3 ==> 1, 2 ==> 1
 	- Checking whether there is a cycle in a graph when solving Kruscal algorithm
 	- Binary search
 
-###Linear Time Complexity: O(N):
+### Linear Time Complexity: O(N):
 	- Finding the minimum or maximum value in the array of numbers
 	- Iterating through all items is N
 	- Linear search
 
-###Linearthmetic Complexity O(N*logN)	
+### Linearthmetic Complexity O(N*logN)	
 	- Mergesort
 	- Quick sort
 	- Heap sort
 	- Finding closest pair of points with divide and conquer method
 
-####Below are the slower Algorithms
+#### Below are the slower Algorithms
 
-###Polynomial Time Complexity O(N^k) 
+### Polynomial Time Complexity O(N^k) 
 	- When k = 2 it becomes O(N^2)
 	- Bubble sort
 	- Insertion sort
 	- Finding closest pair of points with brute force approach
 
-###Exponential Algorithms:
+### Exponential Algorithms:
 	- O(c^N)
 	- Towers of hanoi problems
 	- Calculate fibonacci numbers with recursive manner ~ c=2 here too
 	- Travelling salesman problem with dynamic programming implementation
 
-###Factorial Time Complexity
+### Factorial Time Complexity
 	- O(N!)
 	- solving travelling salesman problem with brute force.
 	- try to find one with minimum overall distance
 
 
-#Complexity Classes:
+# Complexity Classes:
 
-##P complexity class;
+## P complexity class;
 	- Polynomial
 	- Bubble sort can be solved by merge sort
 
-##NP complexity class;
+## NP complexity class;
 	- Non-deterministic Polynomial
 	- Bubble sort can be solved by merge sort
 
-##NP Complete complexity class;
+## NP Complete complexity class;
 	- Polynomial
 	- Bubble sort can be solved by merge sort
 
-##NP Hard
+## NP Hard
 
-#Time complexity of different operations
-##Loops
+# Time complexity of different operations
+## Loops
 	- Function value assignment --> O(1) single operation
 	- Single for loop and has only O(1) operations inside it such as print or finding value: O(N) time complexity
 	- Nested For Loop: O(N^k) where k = number of for loops --> Quadratic running time
 
-##Linear search:
+## Linear search:
 	- Best case scenario, you get item in first index search. First element of array ==> O(1)
 	- Worst case scenario, there is no element that you are searching for in an Array	==> O(N)
 
-##Binary Search:
+## Binary Search:
 	- Divide array into halves for x number of times until there is one item left.
 	- 1 = N/2^x
 	- 2^x = N
 	- log 2^x = log N
 	- x = log N
 
-##Bubble Search: O(N^2)
+## Bubble Search: O(N^2)
 	- Quadratic time complexity
 
-#Time complexity of Data Types
+# Time complexity of Data Types 
 
-##Array
+## Array
 	- Advantages: Random Access, O(1)
 	- Disadvantages: Compile time Sizing, Expanding array require O(N) operation, does not store differen types
 	- Operations:
@@ -160,11 +160,11 @@ Dictionary & hashmap | array
 		- Remove Last item Operation - O(1)
 		- Remove by index -O(N) because it will require reconstructing array 
 
-###Arrays in Python:
+### Arrays in Python:
 	- Does not have native Array like above but have "list" general purpose array
 	- List : ordered collection of items
 
-##Linked List
+## Linked List
 	+ They are nodes and points to another node
 	+ Last node points to null so we know it is last node
 	+ Single Node:	
@@ -181,12 +181,12 @@ Dictionary & hashmap | array
 	+ Simple linked list do not allow random access
 	+ Many basic operations require visiting most or all items in the list O(N) except the first item in the linked list O(1)
 
-###Advantages:
+### Advantages:
 	+ they are dynamic data structures (Arrays are not)
 	+ It can allocate memory during runtime O(1)
 	+ very efficient when we want to manipulate the first element
   		+ 
-###Disadvantages:
+### Disadvantages:
 	+ waste of memory becuase of reference value
 	+ Nodes in the linked list must be read in order from the beginning as linked list have sequential access, 
 	+ difficult to navigate backward, so add preiovus item reference doubly linked lists
@@ -204,7 +204,7 @@ Dictionary & hashmap | array
 		- Simple Linked list reverse traversing is impossible
 		- Doubly linked list works great
 
-###Difference between linked list and Array	
+### Difference between linked list and Array	
 	- Search
 		- Search operation yields the same result for both data structure
 		- ArrayList search operation is pretty faster compared to the linkedList search operation
@@ -221,11 +221,11 @@ Dictionary & hashmap | array
 	- Memory Management	
 		- array are better because of no references. linked list has space complexity O(N)
 
-###Doubly Linked List:
+### Doubly Linked List:
 	- pointer to both previous and next node
 	- removal of a node is O(1) if we know the item.
 
-##Stack: Abstract Data Type
+## Stack: Abstract Data Type
 	+ Interface
 	+ Basis Operation pop(), push(), peek()
 	+ LIFO operation
@@ -235,24 +235,24 @@ Dictionary & hashmap | array
 		+ Peek --> O(1) return item without removing from the stack
 	+ Usage in Graphs
 
-###Stack Memory:
+### Stack Memory:
 	+ It is a specialy memory in RAM
 	+ it keeps track of the point to which each active subroutine should return control when it finishes executing
 	+ Stores temporary variables created by each function
 	+ Local variables are in stack
 	+ Stack memory is limited
 
-###Heap Memory:
+### Heap Memory:
 	+ Not managed automatically for you. It is in RAM
 	+ C: malloc(), calloc()
 	+ Java: reference types and object at the heap
 	+ we have to dellocate to remove it from heap -- garbage collection
 
-###Stack and Recursion:
+### Stack and Recursion:
 	+ Recursion uses stacks by OS
 	+ 
 
-##Queue: Abstract data type
+## Queue: Abstract data type
 	+ Basic operations
 		+ enqueue
 		+ dequeue
@@ -268,7 +268,7 @@ Dictionary & hashmap | array
 	+ Breadfort search, big search
 	+ Priority Queue for graph traversal
 
-##Binary Search Tree: (data structure)
+## Binary Search Tree: (data structure)
 	- Sorted Array
 		- inserting new item slow O(N)
 		- Searching is fast O(logN)
@@ -278,7 +278,7 @@ Dictionary & hashmap | array
 		- searching is seuqnetial O(N)
 		- removing item is fast O(1)
 
-##Binary Trees****:
+## Binary Trees****:
 	+ From one node to another there is only one path			
 	+ Parent/Child link
 	+ can have more than 2 childs
@@ -309,7 +309,7 @@ Dictionary & hashmap | array
 	+ Binary tree must be as balanced as possible
 
 
-##Balanced Binary Trees: 
+## Balanced Binary Trees: 
 	+ if height of the tree is either greater than 1 or less than -1 then it will be unbalanced.
 		+ AVL
 		+ Red-Black trees
@@ -339,7 +339,7 @@ Dictionary & hashmap | array
 	+ OS rely on these data structures
 
 
-##Red black properties
+## Red black properties
 	1. each node is either red or black
 	2. Root node is always black
 	3. all leaves NIL or NULL are black
@@ -354,7 +354,7 @@ Dictionary & hashmap | array
 	- Red-Black Tree use for insert operations --> Search is slow
 	- AVL Tree good for lookup --> insert and delete operation is slow coz we need to rebalanced
 
-##Priority Queue:
+## Priority Queue:
 	- It is an abstract data type such as stack or queue
 	- BUT each item has additional property: a priority value
 	- In priority queue, item with higher priority value is processed first
@@ -365,7 +365,7 @@ Dictionary & hashmap | array
 	- sequentially remove them: it will be the sorted order
 	- Example: tree sort, heap sort
 
-##Heap:
+## Heap:
 	- Implementation of Priority Queue
 	- Binary Tree
 	- minimum heap --> root node is minimum and so on
@@ -388,7 +388,7 @@ Dictionary & hashmap | array
 			- Delete Root Operation -> Remove item O(1), reconstruction O(logN) ==> Delete = O(logN)
 			- Delete  arbitary item --> O(N)
 
-##Heapsort:
+## Heapsort:
 	- Comparison based sorting
 	- uses heap data structure not linear data strcutuer.
 	- bit slower in practice on most machine than a well implemented quicksort
@@ -402,9 +402,9 @@ Dictionary & hashmap | array
 		- Insert new item = just insert O(1), conforming heap properties is O(logN) so overall time complexity is O(logN)
 		- Removing Item= remvoing root node is O(1), to meet heap properties O(logN)  so overall time complexity is O(logN)
 
-####Difference between binary search tree and heap is finding minumum and maximum is O(1) in heap but O(logN) in binary search tree as it will be a leaf node.
+#### Difference between binary search tree and heap is finding minumum and maximum is O(1) in heap but O(logN) in binary search tree as it will be a leaf node.
 
-##Other types of heaps:
+## Other types of heaps:
 	- Binomial Heap
 		- similar to binary heap but also supports quick merging of two heaps
 		- It is importantant, as an implementation of the mergable heap abstract data type
@@ -419,14 +419,14 @@ Dictionary & hashmap | array
 		- We can achieve O(1) insert operation instead of O(logN)
 		- every node has degree at most O(logN) and the size of a subtree rooted in a node of degree k is atleast F(k+2) where F(k) is the k- fibonacci.
 
-##Time complexities:
+## Time complexities:
 	Find min: Binary -> O(1), Binomial -> O(1), Fibonacci --> O(1)
 	Delete min: Binary -> O(logN), Binomial -> O(logN), Fibonacci --> O(logN)
 	Insert -> Binary -> O(logN), Binomial -> O(1), Fibonacci --> O(1)
 	Decrease Key _> Binary -> O(logN), Binomial -> O(logN), Fibonacci --> O(1)
 	merge -> Binary -> N/A, Binomial -> O(logN), Fibonacci --> O(1)
 
-##ASSOCATIVE ARRAYS:
+## ASSOCATIVE ARRAYS:
 	- Associative arrays/maps/dictionaries are abstract data types
 	- composed of collection of key-value pair
 	- most of the time associative array is implemented with hashtables but binary search trees can be used as well
@@ -438,7 +438,7 @@ Dictionary & hashmap | array
 		- lookup
 		- DO NOT SUPPORT SORTING so other complex implementation sare done
 
-##HASH TABLES/DICTIONARIES:
+## HASH TABLES/DICTIONARIES:
 	- uses array as underlining data strcuture
 	- array index is generated using hashing of the passed key (module is simple example)
 	- hash key can have collision, meaning same key is assigned to multiple values "apple", two p get same key due to hashing
@@ -449,11 +449,11 @@ Dictionary & hashmap | array
 	- if hash function is nearly working, Insert, update, delete, search function in dictionary is O(1)		
 
 
-##Tries:
+## Tries:
 	- When key generated Tries TST (Tenneri search tree) does not examine all the characters in the key like in hash tabl.
 
 
-#Graph Algorithms:
+# Graph Algorithms:
 	- G(V,E) -> are mathematical structures to model pairwise relations between given objects
 	- Graph is made of vertices/nodes and edges
 	- Two types:
@@ -468,7 +468,7 @@ Dictionary & hashmap | array
 		- Spanning trees
 		- maximum flow problem: 
 
-##Breadth First Search:
+## Breadth First Search:
 	- if we have a graph and we want to visit every node --> BFS
 	- layer by layer algorithm
 	- we visit each vertex exactly once neighbour by neighbour
@@ -486,7 +486,7 @@ Dictionary & hashmap | array
 		- use BFS to detect all the references on the heap
 		- Serialization/Deserialization of tree like structure
 
-##Depth-First Search
+## Depth-First Search
 	- widely used for graph traversal beside breadth-first search
 	- it explores as far as possible alone each branch before backtracking		
 	- Time complexity of traversing a graph = O(V+E)
@@ -505,7 +505,7 @@ Dictionary & hashmap | array
 		BFS --> queue + layer by layer algorithm
 		DFS --> stack + goeas as deep as possible in a tree	
 
-##Memory Complexity:
+## Memory Complexity:
 	- BFS:
 		- O(N)
 		- used in artificial intelligence, robot movement
