@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 
 #Abstract Data Types & Data Structures
 ## Abstract Data Types
+=======
+##Abstract Data Types & Data Structures
+
+### Abstract Data Types
+>>>>>>> d888b36282b36da53c127041c248db81ea019a34
 	+ Interfaces in Java
 	+ Super Types
 	+ Without a concrete implementation
@@ -19,6 +25,7 @@ Stack | array, linked list
 Queue | array, linked list
 Priority Queue | heap
 Dictionary & hashmap | array
+--- | ---
 
 #Complexity Theory Basics
 - Space Complexity: how much memory an algorithm needs
