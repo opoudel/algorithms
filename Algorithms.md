@@ -1,5 +1,6 @@
-#Abstract Data Types & Data Structures
-## Abstract Data Types
+##Abstract Data Types & Data Structures
+
+### Abstract Data Types
 	+ Interfaces in Java
 	+ Super Types
 	+ Without a concrete implementation
