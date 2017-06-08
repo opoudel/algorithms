@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 #Abstract Data Types & Data Structures
 ## Abstract Data Types
@@ -6,7 +5,6 @@
 ##Abstract Data Types & Data Structures
 
 ### Abstract Data Types
->>>>>>> d888b36282b36da53c127041c248db81ea019a34
 	+ Interfaces in Java
 	+ Super Types
 	+ Without a concrete implementation
